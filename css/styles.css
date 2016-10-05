@@ -1,0 +1,63 @@
+body {
+  background-color: tan;
+}
+h1 {
+  font-family: "Impact", Charcoal, sans-serif;
+}
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+p {
+  font-family: "Arial Black", Gadget, sans-serif
+  font-weight: bold;
+}
+fieldset {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-color: white;
+  border-top-style: outset;
+  border-right-style: outset;
+  border-bottom-style: outset;
+  border-left-style: outset;
+}
+label {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+input:focus {
+  color: red
+  background-color: tan;
+}
+.texts {
+  background-image: url('../images/paper.jpg');
+}
+.texts:hover {
+  background-image: url('../images/wrinkledPaper.jpg');
+}
+.dates {
+  background-image: url('../images/paper.jpg');
+}
+.dates:hover {
+  background-image: url('../images/wrinkledPaper.jpg');
+}
+.radio-holders {
+  background-image: url('../images/paper.jpg');
+}
+.radio-holders:hover {
+  background-image: url('../images/wrinkledPaper.jpg');
+}
+.checkboxes {
+  background-image: url('../images/paper.jpg');
+}
+.checkboxes:hover {
+  background-image: url('../images/wrinkledPaper.jpg');
+}
+.form-submits {
+  background-image: url('../images/paper.jpg');
+}
+.form-submits:hover {
+  background-image: url('../images/wrinkledPaper.jpg');
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Assignment2">
+    <meta name="author" content="Salvatore Avena">
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>Assignment2</title>
+  </head>
+
+  <body>
+    <div class="title-bar">
+      <h1>Assignment2 Form - Salvatore Avena</h1>
+    </div>
+    <form action="/formsubmit.php" method="get" id="contactForm">
+      <fieldset class="texts">
+        <h3> Contact Information: </h2>
+        <div class = "input-holder">
+          <label for="fname">First Name:</label>
+          <input type="text" name="fname"><!--required ="true"-->
+        </div>
+        <div class = "input-holder">
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname"><!--required ="true"-->
+        </div>
+        <div class = "input-holder">
+          <label for="email">Email Address:</label>
+          <input type="email" name="email"><!--required ="true"-->
+        </div>
+        <div class = "input-holder">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone"><!--required ="true"-->
+        </div>
+      </fieldset>
+      <fieldset class="dates">
+        <div class="date">
+          <label for="currDate">Please enter the current date:</label>
+          <input type="date" name="currDate"><!--required ="true"-->
+        </div>
+      </fieldset>
+      <fieldset class="radio-holders">
+        <h3> Please select the option that best describes you: </h2>
+        <div class="radio-holder">
+          <input type="radio" name="descriptor" value="student" id="student"><!--required ="true"-->
+          <label for="student">Student</label>
+        </div>
+        <div class="radio-holder">
+          <input type="radio" name="descriptor" value="professor" id="professor"><!--required ="true"-->
+          <label for="professor">Professor</label>
+        </div>
+        <div class="radio-holder">
+          <input type="radio" name="descriptor" value="employer" id="employer"><!--required ="true"-->
+          <label for="employer">Employer</label>
+        </div>
+        <div class="radio-holder">
+          <input type="radio" name="descriptor" value="other" id="other"><!--required ="true"-->
+          <label for="other">Other</label>
+        </div>
+      </fieldset>
+      <fieldset class="checkboxes">
+        <div class="checkbox">
+          <label for="fan">Are you a fan of this form?</label>
+          <input type="checkbox" name="fan" id="fan" value="yes">
+        </div>
+        <div class="checkbox">
+          <label for="again">Would you fill out this form again?</label>
+          <input type="checkbox" name="again" id="again" value="yes">
+        </div>
+      </fieldset>
+      <fieldset class="form-submits">
+        <input type="submit" name="submit" id="submit" value="Submit">
+        <input type="reset" name="reset" id="reset" value="Reset">
+      </fieldset>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./js/functionality.js"></script>
+  </body>
+</html>
