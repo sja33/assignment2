@@ -7,7 +7,7 @@
   });
 })(jQuery);
 
-function validateForm() {
+var validateForm = function validateForm() {
   var x = document.forms["contactForm"]["fname"].value;
   var y = document.forms["contactForm"]["fname"].name;
   if (x == null || x == "") {
@@ -30,6 +30,12 @@ function validateForm() {
   var y = document.forms["contactForm"]["phone"].name;
   if (x == null || x == "") {
     alert(y+" (phone number) must be filled out");
+    return false;
+  }
+  var x = document.forms["contactForm"]["currDate"].value;
+  var y = document.forms["contactForm"]["currDate"].name;
+  if (x == null || x == "") {
+    alert(y+" (date) must be filled out");
     return false;
   }
   return true;
